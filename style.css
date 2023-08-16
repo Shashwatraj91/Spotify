@@ -1,3 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
 body{
     background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+nav ul{
+    /* to display the ul element in a row flex is used*/
+    display: flex;
+    /* To remove the dot before ul list item list-style-type is none*/
+    list-style-type: none;
+    height: 65px;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+.brand img{
+    width: 45px;
+    padding: 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+ul li{
+    padding: 6px;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    min-height: 80vh;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    width: 70%;
+    padding: 30px;
+    border-radius: 20px;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons i{
+    width: 20px;
+    height: 33px;
+    margin-top: 23px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+/* .fa-pause{
+    color: #ffffff;
+} */
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 40%;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 30px;
+}
+.timestamp{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.songlistcontainer{
+    margin: 50px 0;
+}
+.songinfo{
+    color: white;
+    position: absolute;
+    left: 10vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.songinfo img{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+
+}
+.songItem span{
+    font-family: 'Montserrat', sans-serif;
 }
